@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-22.04
     steps: 
       - name: 将存储库签出到运行器
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: 安装依赖项
         run: |
@@ -38,12 +38,12 @@ jobs:
       runs-on: ubuntu-22.04
       steps:
           - name: 将存储库签出到运行器
-            uses: actions/checkout@v3
+            uses: actions/checkout@v4
             with:
                 path: push
 
           - name: 下载上游DNS服务器分流规则
-            uses: actions/download-artifact@v3
+            uses: actions/download-artifact@v4
             with:
                 name: Upstream-DNS-servers-offload-rules
 
