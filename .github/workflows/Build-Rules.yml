@@ -28,7 +28,7 @@ jobs:
       
       - name: 上传上游DNS服务器分流规则
         if: success() || failure()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
             name: Upstream-DNS-servers-offload-rules
             path: "workdir/AdGuardHome-dnslist(by cmzj).yaml"
